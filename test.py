@@ -60,8 +60,7 @@ class Emailer:
 
 sender = Emailer()
 
-while True:
-    if GPIO.event_detected(17):
+for range in (1):
         image = '/home/pi/Desktop/image.jpg'
         camera.capture(image)
         sendTo = 'jolene5652@email.com'
