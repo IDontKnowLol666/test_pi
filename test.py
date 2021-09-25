@@ -60,11 +60,10 @@ class Emailer:
 
 sender = Emailer()
 
-for range in (1):
-        image = '/home/pi/Desktop/image.jpg'
-        camera.capture(image)
-        sendTo = 'jolene5652@email.com'
-        emailSubject = "Button Press Detected!"
-        emailContent = "The button has been pressed at: " + time.ctime()
-        sender.sendmail(sendTo, emailSubject, emailContent, image)
-        print("Email Sent")
+image = '/home/pi/Desktop/image.jpg'
+camera.capture(image)
+sendTo = 'jolene5652@email.com'
+emailSubject = "Button Press Detected!"
+emailContent = "The button has been pressed at: " + time.ctime()
+sender.sendmail(sendTo, emailSubject, emailContent, image)
+print("Email Sent")
