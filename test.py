@@ -68,5 +68,3 @@ for range in (1):
         emailContent = "The button has been pressed at: " + time.ctime()
         sender.sendmail(sendTo, emailSubject, emailContent, image)
         print("Email Sent")
-
-    time.sleep(0.1)
